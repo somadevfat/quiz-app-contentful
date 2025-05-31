@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rich_background_combined"
+    tools:context=".ProblemListFragment">
+
+    <!-- プレミアムバナーとアチーブメント指標 -->
+    <include
+        android:id="@+id/included_achievements_banner"
+        layout="@layout/layout_achievements_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 学習パスヘッダー (元のCardViewに戻す) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/learning_path_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="#33304d"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/included_achievements_banner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/path_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/java_learning_path"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/path_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="6 ユニット • Java Silver認定対応"
+                android:textColor="#BBBBBB"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@id/path_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ユニットとレッスンのリスト -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/units_lessons_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        app:layout_constraintTop_toBottomOf="@id/learning_path_header"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

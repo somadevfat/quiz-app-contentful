@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/home_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Learn Stats -->
+        <!-- Learning stats area removed -->
+
+        <!-- Character Image -->
+        <!-- ImageView with id characterImageView removed -->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-56dp"
+            android:layout_marginBottom="-24dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/animation_coffee" />
+
+        <!-- Chat Bubble UI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="16dp"
+            android:tag="chat_container">
+
+                    <TextView
+                        android:id="@+id/chatBubbleTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chat_bubble_background"
+                        android:padding="16dp"
+                        android:text="こんにちは、Java学習者！"
+                                android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <TextView
+                        android:id="@+id/chatBubbleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chat_bubble_background"
+                        android:padding="16dp"
+                        android:text="今日も一緒にJavaの知識を深めていきましょう！どの分野から学習しますか？"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+        <!-- Action Buttons (Moved below Chat UI) -->
+        <LinearLayout
+            android:id="@+id/topButtonRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/categoryExamButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/exam_category"
+                android:textColor="#00BFFF"
+                app:icon="@drawable/ic_folder_24"
+                app:iconTint="#00BFFF"
+                app:iconPadding="8dp"
+                app:iconSize="24dp"
+                app:backgroundTint="#1A00BFFF"
+                app:cornerRadius="28dp"
+                app:strokeColor="#00BFFF"
+                app:strokeWidth="2dp"
+                android:paddingStart="12dp" android:paddingEnd="12dp" android:paddingTop="8dp" android:paddingBottom="8dp"
+                android:textAllCaps="false" android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/listExamButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/title_history"
+                android:textColor="#88FF88"
+                app:icon="@drawable/ic_history_24dp"
+                app:iconTint="#88FF88"
+                app:iconPadding="8dp"
+                app:iconSize="24dp"
+                app:backgroundTint="#1A88FF88"
+                app:cornerRadius="28dp"
+                app:strokeColor="#88FF88"
+                app:strokeWidth="2dp"
+                android:paddingStart="12dp" android:paddingEnd="12dp" android:paddingTop="8dp" android:paddingBottom="8dp"
+                android:textAllCaps="false" android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- LinearLayout container for randomExamButton to control its width -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/randomExamButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp" 
+                android:layout_height="wrap_content"
+                android:layout_weight="1" 
+                android:minHeight="0dp"
+                android:layout_marginEnd="8dp" 
+                android:text="@string/exam_random"
+                android:textColor="#FF70C6"
+                app:icon="@drawable/ic_shuffle"
+                app:iconTint="#FF70C6"
+                app:iconPadding="12dp"
+                app:iconSize="24dp"
+                app:backgroundTint="#1AFF70C6"
+                app:cornerRadius="28dp"
+                app:strokeColor="#FF70C6"
+                app:strokeWidth="2dp"
+                android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="8dp" android:paddingBottom="8dp"
+                android:textAllCaps="false" android:textSize="14sp" />
+
+            <!-- Spacer View to limit randomExamButton width -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation Toggle UI is removed - now in MainActivity -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

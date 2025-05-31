@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- ベースのグラデーション背景 -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#1E1635"
+                android:centerColor="#2A254F"
+                android:endColor="#1E2B4D"
+                android:centerX="0.5"
+                android:centerY="0.5" />
+        </shape>
+    </item>
+    
+    <!-- 微妙な光の効果 (左上) -->
+    <item android:left="-150dp" android:top="-150dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="180dp"
+                android:startColor="#03FFFFFF"
+                android:endColor="@android:color/transparent" />
+            <size
+                android:width="300dp"
+                android:height="300dp" />
+        </shape>
+    </item>
+    
+    <!-- 微妙な光の効果 (右下) -->
+    <item android:right="-100dp" android:bottom="-100dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="150dp"
+                android:startColor="#02FFFFFF"
+                android:endColor="@android:color/transparent" />
+            <size
+                android:width="250dp"
+                android:height="250dp" />
+        </shape>
+    </item>
+    
+    <!-- 微細なノイズ効果 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#02FFFFFF" />
+        </shape>
+    </item>
+</layer-list> 

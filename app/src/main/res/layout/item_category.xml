@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <!-- カテゴリアイコン (lesson_icon_container に相当) -->
+    <FrameLayout
+        android:id="@+id/category_icon_container"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/category_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:src="@drawable/ic_folder_24"
+            android:contentDescription="@string/category_icon_description" />
+
+         <!-- 完了チェックマーク (lesson_icon_container の中) - 必要なら追加 -->
+         <!-- <ImageView ... /> -->
+
+    </FrameLayout>
+
+    <!-- カテゴリ情報 (lesson_info に相当) -->
+    <LinearLayout
+        android:id="@+id/category_info_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintStart_toEndOf="@id/category_icon_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/category_icon_container"
+        app:layout_constraintBottom_toTopOf="@id/category_divider">
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            tools:text="データ型" />
+
+        <!-- category_description TextView をコメントアウト -->
+        <!-- 
+        <TextView
+            android:id="@+id/category_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#CCCCCC"
+            android:layout_marginTop="4dp"
+            tools:text="基本データ型と参照型" />
+         -->
+
+        <TextView
+            android:id="@+id/category_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#AAAAAA"
+            android:layout_marginTop="8dp"
+            tools:text="3/10 Questions" />
+
+    </LinearLayout>
+
+    <!-- 区切り線 (chapter_divider に相当) -->
+    <View
+        android:id="@+id/category_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="0dp"
+        android:alpha="0.2"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/category_info_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/category_icon_container"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout> 

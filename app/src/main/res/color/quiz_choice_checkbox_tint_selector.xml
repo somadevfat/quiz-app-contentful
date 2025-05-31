@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Order matters: More specific states first -->
+
+    <!-- Incorrect state (custom state_incorrect=true, selected, disabled) -->
+    <item android:state_selected="true" android:state_enabled="false" app:state_incorrect="true" android:color="?attr/colorError" /> <!-- Show error color for incorrect checkbox? -->
+    <!-- Correct state (custom state_correct=true, selected, disabled) -->
+    <item android:state_selected="true" android:state_enabled="false" app:state_correct="true" android:color="?attr/colorPrimary" /> <!-- Show primary color for correct checkbox? -->
+    <!-- Missed state (correct answer shown when incorrect answer was selected, disabled) -->
+    <item android:state_enabled="false" app:state_missed="true" android:color="?attr/colorPrimary"/> <!-- Show primary color for missed correct answer -->
+    <!-- Disabled state (after answering, other non-correct/incorrect options) -->
+    <item android:state_enabled="false" android:color="?attr/colorOnSurfaceVariant" /> <!-- Use standard disabled tint -->
+    <!-- Checked state -->
+    <item android:state_checked="true" android:color="?attr/colorPrimary" />
+    <!-- Default state (enabled, not checked) -->
+    <item android:color="?attr/colorOnSurfaceVariant"/> <!-- Use standard unchecked tint -->
+
+</selector> 

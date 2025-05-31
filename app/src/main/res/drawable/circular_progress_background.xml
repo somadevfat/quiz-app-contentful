@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!--
+    This drawable might not be needed if the ProgressBar background is handled
+    by the theme (e.g., using colorSurfaceVariant for the track).
+    Keeping it for now, but consider if it's redundant.
+    -->
+    <solid android:color="?attr/colorPrimaryVariant" /> <!-- Use theme attribute -->
+    <size
+        android:width="48dp"
+        android:height="48dp" />
+</shape> 

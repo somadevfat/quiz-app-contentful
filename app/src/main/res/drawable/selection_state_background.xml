@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 外側の光るエフェクト -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#600096FF" />
+            <corners android:radius="18dp" />
+            <padding
+                android:bottom="2dp"
+                android:left="2dp"
+                android:right="2dp"
+                android:top="2dp" />
+        </shape>
+    </item>
+    
+    <!-- 下側の影 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#5000A0FF" />
+            <corners android:radius="16dp" />
+            <padding
+                android:bottom="2dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp" />
+        </shape>
+    </item>
+    
+    <!-- メインの背景 -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#4886FC"
+                android:centerColor="#536DFE"
+                android:endColor="#304FFE"
+                android:angle="270" />
+            <corners android:radius="16dp" />
+            <stroke android:color="#B0C8FF" android:width="1dp" />
+        </shape>
+    </item>
+    
+    <!-- 上部に光沢効果を追加 -->
+    <item android:top="0dp" android:bottom="16dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#90FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:angle="270" />
+            <corners
+                android:topLeftRadius="16dp"
+                android:topRightRadius="16dp" />
+        </shape>
+    </item>
+    
+    <!-- 中央に輝き効果を追加 -->
+    <item 
+        android:top="8dp" 
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="60dp"
+                android:startColor="#50FFFFFF"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+</layer-list> 

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- **** Generated Color Scheme (Lavender Based - Primary: #7C5EAA) **** -->
+    <!-- Base Light Theme Colors -->
+    <color name="md_theme_primary">#7C5EAA</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#F1DEFF</color>
+    <color name="md_theme_onPrimaryContainer">#311962</color>
+    <color name="md_theme_secondary">#645A70</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#EBDDF7</color>
+    <color name="md_theme_onSecondaryContainer">#1F182A</color>
+    <color name="md_theme_tertiary">#7E525D</color>
+    <color name="md_theme_onTertiary">#FFFFFF</color>
+    <color name="md_theme_tertiaryContainer">#FFD9E1</color>
+    <color name="md_theme_onTertiaryContainer">#31101B</color>
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_errorContainer">#FFDAD6</color>
+    <color name="md_theme_onErrorContainer">#410002</color>
+    <color name="md_theme_background">#FFFBFF</color>
+    <color name="md_theme_onBackground">#1D1B1E</color>
+    <color name="md_theme_surface">#FFFBFF</color>
+    <color name="md_theme_onSurface">#1D1B1E</color>
+    <color name="md_theme_surfaceVariant">#E8E0EB</color>
+    <color name="md_theme_onSurfaceVariant">#4A454E</color>
+    <color name="md_theme_outline">#7B757F</color>
+    <color name="md_theme_inverseOnSurface">#F5EFF4</color>
+    <color name="md_theme_inverseSurface">#323033</color>
+    <color name="md_theme_inversePrimary">#DEC1FF</color>
+    <color name="md_theme_surfaceTint">#7C5EAA</color>
+    <color name="md_theme_outlineVariant">#CCC4CF</color>
+    <color name="md_theme_scrim">#000000</color>
+
+    <!-- 追加: surfaceContainerHigh for Light Theme -->
+    <color name="md_theme_light_surfaceContainerHigh">#F1EFF4</color> <!-- Example: Slightly off-white -->
+
+    <!-- 追加: surfaceContainerHighest for Light Theme -->
+    <color name="md_theme_light_surfaceContainerHighest">#E8E0EB</color> <!-- Example: Slightly darker off-white -->
+
+    <!-- 追加: Dummy Surface Containers for Dark Theme (for Lint) -->
+    <color name="md_theme_dark_surfaceContainer">#F1EFF4</color>      <!-- Use Light High as dummy -->
+    <color name="md_theme_dark_surfaceContainerHigh">#E8E0EB</color>     <!-- Use Light Highest as dummy -->
+    <color name="md_theme_dark_surfaceContainerHighest">#E0DADE</color>  <!-- Use even darker dummy -->
+
+    <!-- **** Custom Colors for App Logic **** -->
+    <color name="correct_green">#4CAF50</color> <!-- Green for correct answers -->
+    <color name="incorrect_red">#F44336</color> <!-- Red for incorrect answers -->
+
+    <!-- **** Custom Colors **** -->
+    <color name="drawer_background_dark_semi_transparent">#CC121212</color>
+    <color name="card_background_dark_semi_transparent">#B332303E</color>
+    <color name="card_background_dark_desaturated">#B332303E</color>
+    <color name="button_pink_text">#EC407A</color>
+
+    <!-- **** Theme: Terracotta (M3 Updated) **** -->
+    <color name="terracotta_theme_primary">#B55100</color>
+    <color name="terracotta_theme_onPrimary">#FFFFFF</color>
+    <color name="terracotta_theme_primaryContainer">#FFDBC8</color>
+    <color name="terracotta_theme_onPrimaryContainer">#3D1600</color>
+    <color name="terracotta_theme_secondary">#775747</color>
+    <color name="terracotta_theme_onSecondary">#FFFFFF</color>
+    <color name="terracotta_theme_secondaryContainer">#FFDBC8</color>
+    <color name="terracotta_theme_onSecondaryContainer">#2C150A</color>
+    <color name="terracotta_theme_tertiary">#685F2F</color>
+    <color name="terracotta_theme_onTertiary">#FFFFFF</color>
+    <color name="terracotta_theme_tertiaryContainer">#F0E3A8</color>
+    <color name="terracotta_theme_onTertiaryContainer">#211C00</color>
+    <color name="terracotta_theme_error">#BA1A1A</color>
+    <color name="terracotta_theme_onError">#FFFFFF</color>
+    <color name="terracotta_theme_errorContainer">#FFDAD6</color>
+    <color name="terracotta_theme_onErrorContainer">#410002</color>
+    <color name="terracotta_theme_background">#FFFBFF</color>
+    <color name="terracotta_theme_onBackground">#201A17</color>
+    <color name="terracotta_theme_surface">#FFFBFF</color>
+    <color name="terracotta_theme_onSurface">#201A17</color>
+    <color name="terracotta_theme_surfaceVariant">#F5DED4</color>
+    <color name="terracotta_theme_onSurfaceVariant">#53433C</color>
+    <color name="terracotta_theme_outline">#85736B</color>
+    <color name="terracotta_theme_inverseOnSurface">#FBEEE9</color>
+    <color name="terracotta_theme_inverseSurface">#362F2C</color>
+    <color name="terracotta_theme_inversePrimary">#FFB68A</color>
+    <color name="terracotta_theme_surfaceTint">#B55100</color>
+    <color name="terracotta_theme_outlineVariant">#D8C2B9</color>
+    <color name="terracotta_theme_scrim">#000000</color>
+
+    <!-- **** Theme: Forest Green (M3 Updated) **** -->
+    <color name="forest_theme_primary">#006E10</color>
+    <color name="forest_theme_onPrimary">#FFFFFF</color>
+    <color name="forest_theme_primaryContainer">#96FA8B</color>
+    <color name="forest_theme_onPrimaryContainer">#002202</color>
+    <color name="forest_theme_secondary">#53634E</color>
+    <color name="forest_theme_onSecondary">#FFFFFF</color>
+    <color name="forest_theme_secondaryContainer">#D6E8CD</color>
+    <color name="forest_theme_onSecondaryContainer">#111F0F</color>
+    <color name="forest_theme_tertiary">#386569</color>
+    <color name="forest_theme_onTertiary">#FFFFFF</color>
+    <color name="forest_theme_tertiaryContainer">#BCEBED</color>
+    <color name="forest_theme_onTertiaryContainer">#002022</color>
+    <color name="forest_theme_error">#BA1A1A</color>
+    <color name="forest_theme_onError">#FFFFFF</color>
+    <color name="forest_theme_errorContainer">#FFDAD6</color>
+    <color name="forest_theme_onErrorContainer">#410002</color>
+    <color name="forest_theme_background">#FDFDF6</color>
+    <color name="forest_theme_onBackground">#1A1C19</color>
+    <color name="forest_theme_surface">#FDFDF6</color>
+    <color name="forest_theme_onSurface">#1A1C19</color>
+    <color name="forest_theme_surfaceVariant">#DFE4D7</color>
+    <color name="forest_theme_onSurfaceVariant">#434840</color>
+    <color name="forest_theme_outline">#73796F</color>
+    <color name="forest_theme_inverseOnSurface">#F1F1EA</color>
+    <color name="forest_theme_inverseSurface">#2F312D</color>
+    <color name="forest_theme_inversePrimary">#7ADC71</color>
+    <color name="forest_theme_surfaceTint">#006E10</color>
+    <color name="forest_theme_outlineVariant">#C3C8BD</color>
+    <color name="forest_theme_scrim">#000000</color>
+
+    <!-- **** Theme: Indigo (M3 Updated) **** -->
+    <color name="indigo_theme_primary">#3D55CC</color>
+    <color name="indigo_theme_onPrimary">#FFFFFF</color>
+    <color name="indigo_theme_primaryContainer">#DEE0FF</color>
+    <color name="indigo_theme_onPrimaryContainer">#001062</color>
+    <color name="indigo_theme_secondary">#5B5D72</color>
+    <color name="indigo_theme_onSecondary">#FFFFFF</color>
+    <color name="indigo_theme_secondaryContainer">#E0E0F9</color>
+    <color name="indigo_theme_onSecondaryContainer">#181A2C</color>
+    <color name="indigo_theme_tertiary">#77536C</color>
+    <color name="indigo_theme_onTertiary">#FFFFFF</color>
+    <color name="indigo_theme_tertiaryContainer">#FFD8EB</color>
+    <color name="indigo_theme_onTertiaryContainer">#2D1127</color>
+    <color name="indigo_theme_error">#BA1A1A</color>
+    <color name="indigo_theme_onError">#FFFFFF</color>
+    <color name="indigo_theme_errorContainer">#FFDAD6</color>
+    <color name="indigo_theme_onErrorContainer">#410002</color>
+    <color name="indigo_theme_background">#FFFBFF</color>
+    <color name="indigo_theme_onBackground">#1B1B1F</color>
+    <color name="indigo_theme_surface">#FFFBFF</color>
+    <color name="indigo_theme_onSurface">#1B1B1F</color>
+    <color name="indigo_theme_surfaceVariant">#E4E1EC</color>
+    <color name="indigo_theme_onSurfaceVariant">#46464F</color>
+    <color name="indigo_theme_outline">#777680</color>
+    <color name="indigo_theme_inverseOnSurface">#F3EFF4</color>
+    <color name="indigo_theme_inverseSurface">#303034</color>
+    <color name="indigo_theme_inversePrimary">#BAC3FF</color>
+    <color name="indigo_theme_surfaceTint">#3D55CC</color>
+    <color name="indigo_theme_outlineVariant">#C7C5D0</color>
+    <color name="indigo_theme_scrim">#000000</color>
+
+    <!-- **** Theme: Slate (M3 Updated) **** -->
+    <color name="slate_theme_primary">#4A6472</color>
+    <color name="slate_theme_onPrimary">#FFFFFF</color>
+    <color name="slate_theme_primaryContainer">#CFE6F3</color>
+    <color name="slate_theme_onPrimaryContainer">#031F2A</color>
+    <color name="slate_theme_secondary">#4E616D</color>
+    <color name="slate_theme_onSecondary">#FFFFFF</color>
+    <color name="slate_theme_secondaryContainer">#D1E5F4</color>
+    <color name="slate_theme_onSecondaryContainer">#0A1E28</color>
+    <color name="slate_theme_tertiary">#5F5B7D</color>
+    <color name="slate_theme_onTertiary">#FFFFFF</color>
+    <color name="slate_theme_tertiaryContainer">#E5DFFF</color>
+    <color name="slate_theme_onTertiaryContainer">#1B1836</color>
+    <color name="slate_theme_error">#BA1A1A</color>
+    <color name="slate_theme_onError">#FFFFFF</color>
+    <color name="slate_theme_errorContainer">#FFDAD6</color>
+    <color name="slate_theme_onErrorContainer">#410002</color>
+    <color name="slate_theme_background">#FBFCFE</color>
+    <color name="slate_theme_onBackground">#191C1E</color>
+    <color name="slate_theme_surface">#FBFCFE</color>
+    <color name="slate_theme_onSurface">#191C1E</color>
+    <color name="slate_theme_surfaceVariant">#DCE4E9</color>
+    <color name="slate_theme_onSurfaceVariant">#40484C</color>
+    <color name="slate_theme_outline">#70787D</color>
+    <color name="slate_theme_inverseOnSurface">#EFF1F3</color>
+    <color name="slate_theme_inverseSurface">#2E3133</color>
+    <color name="slate_theme_inversePrimary">#B3CAD6</color>
+    <color name="slate_theme_surfaceTint">#4A6472</color>
+    <color name="slate_theme_outlineVariant">#C0C8CD</color>
+    <color name="slate_theme_scrim">#000000</color>
+
+    <!-- **** Theme: Ocean Blue (M3 Updated) **** -->
+    <color name="ocean_theme_primary">#006978</color>
+    <color name="ocean_theme_onPrimary">#FFFFFF</color>
+    <color name="ocean_theme_primaryContainer">#99F0FF</color>
+    <color name="ocean_theme_onPrimaryContainer">#002024</color>
+    <color name="ocean_theme_secondary">#4A6267</color>
+    <color name="ocean_theme_onSecondary">#FFFFFF</color>
+    <color name="ocean_theme_secondaryContainer">#CCE7EC</color>
+    <color name="ocean_theme_onSecondaryContainer">#051F23</color>
+    <color name="ocean_theme_tertiary">#535E7D</color>
+    <color name="ocean_theme_onTertiary">#FFFFFF</color>
+    <color name="ocean_theme_tertiaryContainer">#DAE2FF</color>
+    <color name="ocean_theme_onTertiaryContainer">#0F1A36</color>
+    <color name="ocean_theme_error">#BA1A1A</color>
+    <color name="ocean_theme_onError">#FFFFFF</color>
+    <color name="ocean_theme_errorContainer">#FFDAD6</color>
+    <color name="ocean_theme_onErrorContainer">#410002</color>
+    <color name="ocean_theme_background">#FBFCFD</color>
+    <color name="ocean_theme_onBackground">#191C1D</color>
+    <color name="ocean_theme_surface">#FBFCFD</color>
+    <color name="ocean_theme_onSurface">#191C1D</color>
+    <color name="ocean_theme_surfaceVariant">#DBE4E6</color>
+    <color name="ocean_theme_onSurfaceVariant">#3F484A</color>
+    <color name="ocean_theme_outline">#6F797B</color>
+    <color name="ocean_theme_inverseOnSurface">#EFF1F1</color>
+    <color name="ocean_theme_inverseSurface">#2D3131</color>
+    <color name="ocean_theme_inversePrimary">#7DD4E5</color>
+    <color name="ocean_theme_surfaceTint">#006978</color>
+    <color name="ocean_theme_outlineVariant">#BFC8CA</color>
+    <color name="ocean_theme_scrim">#000000</color>
+
+    <!-- **** Theme: Mint Green (M3 Updated) **** -->
+    <color name="mint_theme_primary">#00897B</color>
+    <color name="mint_theme_onPrimary">#FFFFFF</color>
+    <color name="mint_theme_primaryContainer">#A0F4E8</color>
+    <color name="mint_theme_onPrimaryContainer">#00201D</color>
+    <color name="mint_theme_secondary">#4A635F</color>
+    <color name="mint_theme_onSecondary">#FFFFFF</color>
+    <color name="mint_theme_secondaryContainer">#CCE8E3</color>
+    <color name="mint_theme_onSecondaryContainer">#05201D</color>
+    <color name="mint_theme_tertiary">#46617A</color>
+    <color name="mint_theme_onTertiary">#FFFFFF</color>
+    <color name="mint_theme_tertiaryContainer">#CCE5FF</color>
+    <color name="mint_theme_onTertiaryContainer">#001E32</color>
+    <color name="mint_theme_error">#BA1A1A</color>
+    <color name="mint_theme_onError">#FFFFFF</color>
+    <color name="mint_theme_errorContainer">#FFDAD6</color>
+    <color name="mint_theme_onErrorContainer">#410002</color>
+    <color name="mint_theme_background">#FAFDFB</color>
+    <color name="mint_theme_onBackground">#191C1B</color>
+    <color name="mint_theme_surface">#FAFDFB</color>
+    <color name="mint_theme_onSurface">#191C1B</color>
+    <color name="mint_theme_surfaceVariant">#DBE5E2</color>
+    <color name="mint_theme_onSurfaceVariant">#3F4947</color>
+    <color name="mint_theme_outline">#6F7977</color>
+    <color name="mint_theme_inverseOnSurface">#EFF1EF</color>
+    <color name="mint_theme_inverseSurface">#2D3130</color>
+    <color name="mint_theme_inversePrimary">#84D7CC</color>
+    <color name="mint_theme_surfaceTint">#00897B</color>
+    <color name="mint_theme_outlineVariant">#BFC9C6</color>
+    <color name="mint_theme_scrim">#000000</color>
+
+    <!-- **** EXISTING COLORS (Review and Migrate) **** -->
+    <color name="background_color">#F8F9FA</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#6c757d</color>
+    <color name="accent_color">#007AFF</color>
+    <color name="ripple_color">#E0E0E0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="divider_color">?attr/colorOutlineVariant</color>
+    <color name="correct_color">#4CAF50</color>
+    <color name="missed_color">#FFAB40</color>
+    <color name="start_background_dark">#212121</color>
+    <color name="start_text_light">#E0E0E0</color>
+    <color name="button_background">?attr/colorPrimary</color>
+    <color name="button_text">?attr/colorOnPrimary</color>
+    <color name="statistic_item_background">?attr/colorSurfaceContainer</color>
+    <color name="activity_bar_active">#60A5FA</color>
+    <color name="activity_bar_inactive">#3949AB</color>
+    <color name="text_secondary_light">#A5B4FC</color>
+    <color name="accent_color_light">#60A5FA</color>
+    <color name="card_background_light">?attr/colorSurface</color>
+    <color name="text_tertiary">?attr/colorOnSurfaceVariant</color>
+    <color name="card_background_light_blue">#E3F2FD</color>
+    <color name="text_highlight">#FFFFFF</color>
+
+    <!-- ユニット別カラー -->
+    <color name="unit_1_color">#4FC3F7</color>
+    <color name="unit_2_color">#9575CD</color>
+    <color name="unit_3_color">#FF7043</color>
+    <color name="unit_4_color">#4CAF50</color>
+    <color name="unit_5_color">#7E57C2</color>
+    <color name="unit_6_color">#F44336</color>
+    <color name="unit_default_color">#BBBBBB</color>
+
+    <!-- **** Quiz Choice Colors **** -->
+    <color name="quiz_choice_text_correct">@color/md_theme_primary</color>
+    <color name="quiz_choice_text_incorrect">@color/md_theme_error</color>
+    <color name="quiz_choice_text_default">?attr/colorOnSurface</color>
+    <color name="quiz_choice_text_disabled">?attr/colorOnSurfaceVariant</color>
+
+    <color name="quiz_choice_bg_correct">#1A4CAF50</color>
+    <color name="quiz_choice_bg_incorrect">#1ABA1A1A</color>
+    <color name="quiz_choice_bg_selected">?attr/colorSurfaceContainerHighest</color>
+    <color name="quiz_choice_bg_default">?attr/colorSurfaceContainer</color>
+
+    <color name="quiz_choice_stroke_selected">?attr/colorPrimary</color>
+    <color name="quiz_choice_stroke_default">?attr/colorOutline</color>
+
+    <color name="quiz_checkbox_tint_selected">?attr/colorPrimary</color>
+    <color name="quiz_checkbox_tint_default">?attr/colorOnSurfaceVariant</color>
+
+    <!-- **** Theme: Deep Purple (Placeholder) **** -->
+    <color name="deep_purple_theme_primary">#673AB7</color>
+    <color name="deep_purple_theme_onPrimary">#FFFFFF</color>
+    <color name="deep_purple_theme_surface">#F3E5F5</color>
+    <!-- 他の Deep Purple 色定義も必要に応じて追加 -->
+
+    <!-- **** Theme: Orange (Placeholder) **** -->
+    <color name="orange_theme_primary">#FF9800</color>
+    <color name="orange_theme_onPrimary">#FFFFFF</color>
+    <color name="orange_theme_surface">#FFF3E0</color>
+    <!-- 他の Orange 色定義も必要に応じて追加 -->
+
+    <!-- **** Theme: Pink (Placeholder) **** -->
+    <color name="pink_theme_primary">#E91E63</color>
+    <color name="pink_theme_onPrimary">#FFFFFF</color>
+    <color name="pink_theme_surface">#FCE4EC</color>
+    <!-- 他の Pink 色定義も必要に応じて追加 -->
+
+    <!-- **** Theme: Teal (Placeholder) **** -->
+    <color name="teal_theme_primary">#009688</color>
+    <color name="teal_theme_onPrimary">#FFFFFF</color>
+    <color name="teal_theme_surface">#E0F2F1</color>
+    <!-- 他の Teal 色定義も必要に応じて追加 -->
+
+    <color name="unit_color_1">#4FC3F7</color> <!-- 赤 -->
+    <color name="unit_color_2">#9575CD</color> <!-- オレンジ -->
+    <color name="unit_color_3">#FF7043</color> <!-- 黄色 -->
+    <color name="unit_color_4">#4CAF50</color> <!-- 緑 -->
+    <color name="unit_color_5">#7E57C2</color> <!-- 青 -->
+    <color name="unit_color_6">#F44336</color> <!-- 紫 -->
+
+    <!-- **** Missing Colors for Banner (Added) **** -->
+    <color name="colorAccent">#FF6200EE</color> <!-- Purple 500 -->
+    <color name="banner_background">#33304d</color> <!-- Dark Purple/Grey (Updated) -->
+    <color name="premium_banner_text_color">#FFFFFF</color> <!-- White -->
+    <color name="gem_icon_tint">#CDB5FF</color> <!-- Light Purple for Gem Icon -->
+    <color name="go_premium_button_background">#673AB7</color> <!-- Deep Purple for Button -->
+
+    <!-- 設定画面のサマリー用 不透明な白 -->
+    <color name="preference_secondary_text_opaque">#FFFFFFFF</color>
+
+    <!-- Simple Dark Theme Colors -->
+    <color name="dark_surface_variant_for_black">#1F1F1F</color>
+    <color name="dark_surface_variant_for_black_lighter">#333333</color>
+    <color name="dark_surface_variant_for_black_lightest">#444444</color>
+    <color name="dark_on_surface_variant_for_black">#CCCCCC</color>
+    <color name="dark_outline_for_black">#888888</color>
+</resources>

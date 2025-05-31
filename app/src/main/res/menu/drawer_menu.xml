@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_24dp"
+            android:title="ホーム" />
+        <item
+            android:id="@+id/nav_problem_list"
+            android:icon="@drawable/ic_view_list_24dp"
+            android:title="問題一覧" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_24dp"
+            android:title="履歴" />
+        <item
+            android:id="@+id/navigation_bookmark"
+            android:icon="@drawable/ic_bookmark_border_24dp"
+            android:title="ブックマーク" />
+    </group>
+
+    <item android:title="その他">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_24dp"
+                android:title="設定" />
+            <!-- Add other items like Privacy Policy if needed -->
+        </menu>
+    </item>
+
+</menu> 

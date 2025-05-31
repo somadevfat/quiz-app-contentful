@@ -1,0 +1,65 @@
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.hprof
+*.hprof.old
+*.swp
+*.DS_Store
+captures/
+.gradle/
+build/
+app/build/
+local.properties
+*.log
+.kotlin/
+
+# Keystore files (if you have them, though usually not committed)
+# *.jks
+# *.keystore
+
+# Generated files
+generated/
+
+# Misc
+*~
+*.orig
+*.bak
+
+# Detekt Gradle plugin
+build/reports/detekt/
+build/detekt/
+
+# Checkstyle Gradle plugin
+build/reports/checkstyle/
+
+# PMD Gradle plugin
+build/reports/pmd/
+
+# Lint Gradle plugin
+build/reports/lint-results*.html
+build/reports/lint-results*.xml
+
+# Test reports
+build/reports/tests/
+app/build/reports/
+app/build/test-results/
+app/build/outputs/androidTest-results/
+
+# Kover reports
+build/reports/kover/
+
+# Specific to this project if `スクショ` is for temporary screenshots not for repo
+# スクショ/ 
+
+# メモ
+memory-bank/
+
+# ローカルプロパティ
+local.properties
+
+# Cursor
+.cursor/
+
+# Google Services
+app/google-services.json
+google-services.json

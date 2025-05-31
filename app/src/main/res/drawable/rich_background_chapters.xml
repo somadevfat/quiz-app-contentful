@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- グラデーション背景 -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#1A1A2E"
+                android:endColor="#16213E"
+                android:angle="135"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- 波形パターン (上部) -->
+    <item android:top="-50dp" android:right="-50dp">
+        <shape>
+            <corners android:radius="300dp" />
+            <solid android:color="#0f3460" />
+        </shape>
+    </item>
+
+    <!-- 波形パターン (下部) -->
+    <item android:bottom="-250dp" android:left="-50dp">
+        <shape>
+            <corners android:radius="200dp" />
+            <solid android:color="#0A1631" />
+        </shape>
+    </item>
+
+    <!-- 薄い点線パターン (削除) -->
+    <!--
+    <item>
+        <bitmap
+            android:src="@drawable/pattern_dots"
+            android:tileMode="repeat"
+            android:alpha="0.05" />
+    </item>
+    -->
+</layer-list> 

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 共通のアチーブメントバナーレイアウト -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:id="@+id/achievements_banner_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#1F1F38">
+
+    <androidx.constraintlayout.widget.ConstraintLayout 
+        android:id="@+id/achievements_banner_container" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp">
+
+        <!-- 今日の学習時間 -->
+        <LinearLayout
+            android:id="@+id/study_time_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_clock"
+                android:contentDescription="Clock icon"
+                app:tint="#BBDDFF" />
+                
+            <TextView
+                android:id="@+id/today_learning_time_text" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日の学習時間: 0分" 
+                android:textColor="#EEEEEE"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    <!-- 連続学習日数 -->
+    <LinearLayout
+        android:id="@+id/fire_achievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+            android:background="@drawable/streak_badge_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible"> 
+
+        <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+            android:src="@drawable/ic_fire_achievement"
+            android:contentDescription="Fire streak" />
+
+        <TextView
+            android:id="@+id/fire_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" 
+            android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="6dp" />
+                
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日連続" 
+                android:textColor="#DDDDDD"
+                android:textSize="13sp"
+                android:layout_marginStart="2dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout> 
+</androidx.cardview.widget.CardView> 

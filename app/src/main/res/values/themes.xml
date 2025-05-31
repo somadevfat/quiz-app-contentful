@@ -1,0 +1,345 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ContentfulJavasilver" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_error</item>
+        <item name="colorErrorContainer">@color/md_theme_errorContainer</item>
+        <item name="colorOnError">@color/md_theme_onError</item>
+        <item name="colorOnErrorContainer">@color/md_theme_onErrorContainer</item>
+        <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorOnBackground">@color/md_theme_onBackground</item>
+        <item name="colorSurface">@color/md_theme_surface</item>
+        <item name="colorOnSurface">@color/md_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_outline</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/md_theme_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_inversePrimary</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.App.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.App.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.App.DisplaySmall</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.App.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.App.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.App.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.App.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.App.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.App.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.App.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.App.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.App.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.App.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.App.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.App.LabelSmall</item>
+
+        <!-- 追加: Surface Container High for Light Theme -->
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+
+        <!-- 設定画面専用のテーマを指定 -->
+        <item name="preferenceTheme">@style/ThemeOverlay.App.Preference</item>
+
+        <!-- Toolbar のスタイルを指定 -->
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+    </style>
+
+    <!-- Toolbar のカスタムスタイル -->
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <!-- ナビゲーションアイコン (戻るボタン) の色 -->
+        <item name="navigationIconTint">@android:color/white</item>
+    </style>
+
+    <!-- Toolbar 用のテーマオーバーレイ (Light) -->
+    <style name="ThemeOverlay.App.Toolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
+        <!-- ナビゲーションアイコンとアクションメニューアイコンの色 -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!-- タイトルの色 (必要であれば) -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <!-- Terracotta Theme -->
+    <style name="Theme.ContentfulJavasilver.Terracotta" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/terracotta_theme_primary</item>
+        <item name="colorOnPrimary">@color/terracotta_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/terracotta_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/terracotta_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/terracotta_theme_secondary</item>
+        <item name="colorOnSecondary">@color/terracotta_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/terracotta_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/terracotta_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/terracotta_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/terracotta_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/terracotta_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/terracotta_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/terracotta_theme_error</item>
+        <item name="colorErrorContainer">@color/terracotta_theme_errorContainer</item>
+        <item name="colorOnError">@color/terracotta_theme_onError</item>
+        <item name="colorOnErrorContainer">@color/terracotta_theme_onErrorContainer</item>
+        <item name="android:colorBackground">@color/terracotta_theme_background</item>
+        <item name="colorOnBackground">@color/terracotta_theme_onBackground</item>
+        <item name="colorSurface">@color/terracotta_theme_surface</item>
+        <item name="colorOnSurface">@color/terracotta_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/terracotta_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/terracotta_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/terracotta_theme_outline</item>
+        <item name="colorOnSurfaceInverse">@color/terracotta_theme_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/terracotta_theme_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/terracotta_theme_inversePrimary</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+
+    <!-- Forest Green Theme -->
+    <style name="Theme.ContentfulJavasilver.ForestGreen" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/forest_theme_primary</item>
+        <item name="colorOnPrimary">@color/forest_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/forest_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/forest_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/forest_theme_secondary</item>
+        <item name="colorOnSecondary">@color/forest_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/forest_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/forest_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/forest_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/forest_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/forest_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/forest_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/forest_theme_error</item>
+        <item name="colorErrorContainer">@color/forest_theme_errorContainer</item>
+        <item name="colorOnError">@color/forest_theme_onError</item>
+        <item name="colorOnErrorContainer">@color/forest_theme_onErrorContainer</item>
+        <item name="android:colorBackground">@color/forest_theme_background</item>
+        <item name="colorOnBackground">@color/forest_theme_onBackground</item>
+        <item name="colorSurface">@color/forest_theme_surface</item>
+        <item name="colorOnSurface">@color/forest_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/forest_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/forest_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/forest_theme_outline</item>
+        <item name="colorOnSurfaceInverse">@color/forest_theme_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/forest_theme_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/forest_theme_inversePrimary</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+
+    <!-- Indigo Theme -->
+    <style name="Theme.ContentfulJavasilver.Indigo" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/indigo_theme_primary</item>
+        <item name="colorOnPrimary">@color/indigo_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/indigo_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/indigo_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/indigo_theme_secondary</item>
+        <item name="colorOnSecondary">@color/indigo_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/indigo_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/indigo_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/indigo_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/indigo_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/indigo_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/indigo_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/indigo_theme_error</item>
+        <item name="colorErrorContainer">@color/indigo_theme_errorContainer</item>
+        <item name="colorOnError">@color/indigo_theme_onError</item>
+        <item name="colorOnErrorContainer">@color/indigo_theme_onErrorContainer</item>
+        <item name="android:colorBackground">@color/indigo_theme_background</item>
+        <item name="colorOnBackground">@color/indigo_theme_onBackground</item>
+        <item name="colorSurface">@color/indigo_theme_surface</item>
+        <item name="colorOnSurface">@color/indigo_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/indigo_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/indigo_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/indigo_theme_outline</item>
+        <item name="colorOnSurfaceInverse">@color/indigo_theme_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/indigo_theme_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/indigo_theme_inversePrimary</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+
+    <!-- Slate Theme -->
+    <style name="Theme.ContentfulJavasilver.Slate" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/slate_theme_primary</item>
+        <item name="colorOnPrimary">@color/slate_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/slate_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/slate_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/slate_theme_secondary</item>
+        <item name="colorOnSecondary">@color/slate_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/slate_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/slate_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/slate_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/slate_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/slate_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/slate_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/slate_theme_error</item>
+        <item name="colorErrorContainer">@color/slate_theme_errorContainer</item>
+        <item name="colorOnError">@color/slate_theme_onError</item>
+        <item name="colorOnErrorContainer">@color/slate_theme_onErrorContainer</item>
+        <item name="android:colorBackground">@color/slate_theme_background</item>
+        <item name="colorOnBackground">@color/slate_theme_onBackground</item>
+        <item name="colorSurface">@color/slate_theme_surface</item>
+        <item name="colorOnSurface">@color/slate_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/slate_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/slate_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/slate_theme_outline</item>
+        <item name="colorOnSurfaceInverse">@color/slate_theme_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/slate_theme_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/slate_theme_inversePrimary</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+
+    <!-- Ocean Blue Theme -->
+    <style name="Theme.ContentfulJavasilver.OceanBlue" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/ocean_theme_primary</item>
+        <item name="colorOnPrimary">@color/ocean_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/ocean_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/ocean_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/ocean_theme_secondary</item>
+        <item name="colorOnSecondary">@color/ocean_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/ocean_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/ocean_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/ocean_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/ocean_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/ocean_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/ocean_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/ocean_theme_error</item>
+        <item name="colorErrorContainer">@color/ocean_theme_errorContainer</item>
+        <item name="colorOnError">@color/ocean_theme_onError</item>
+        <item name="colorOnErrorContainer">@color/ocean_theme_onErrorContainer</item>
+        <item name="android:colorBackground">@color/ocean_theme_background</item>
+        <item name="colorOnBackground">@color/ocean_theme_onBackground</item>
+        <item name="colorSurface">@color/ocean_theme_surface</item>
+        <item name="colorOnSurface">@color/ocean_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/ocean_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/ocean_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/ocean_theme_outline</item>
+        <item name="colorOnSurfaceInverse">@color/ocean_theme_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/ocean_theme_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/ocean_theme_inversePrimary</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+
+    <!-- Mint Green Theme -->
+    <style name="Theme.ContentfulJavasilver.MintGreen" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/mint_theme_primary</item>
+        <item name="colorOnPrimary">@color/mint_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/mint_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/mint_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/mint_theme_secondary</item>
+        <item name="colorOnSecondary">@color/mint_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/mint_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/mint_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/mint_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/mint_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/mint_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/mint_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/mint_theme_error</item>
+        <item name="colorErrorContainer">@color/mint_theme_errorContainer</item>
+        <item name="colorOnError">@color/mint_theme_onError</item>
+        <item name="colorOnErrorContainer">@color/mint_theme_onErrorContainer</item>
+        <item name="android:colorBackground">@color/mint_theme_background</item>
+        <item name="colorOnBackground">@color/mint_theme_onBackground</item>
+        <item name="colorSurface">@color/mint_theme_surface</item>
+        <item name="colorOnSurface">@color/mint_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/mint_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/mint_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/mint_theme_outline</item>
+        <item name="colorOnSurfaceInverse">@color/mint_theme_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/mint_theme_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/mint_theme_inversePrimary</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+
+    <!-- DeepPurple, Orange, Pink, Teal Themes も同様に追加 (存在する場合) -->
+    <style name="Theme.ContentfulJavasilver.DeepPurple" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/deep_purple_theme_primary</item>
+        <item name="colorSurface">@color/deep_purple_theme_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+    <style name="Theme.ContentfulJavasilver.Orange" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/orange_theme_primary</item>
+        <item name="colorSurface">@color/orange_theme_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+    <style name="Theme.ContentfulJavasilver.Pink" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/pink_theme_primary</item>
+        <item name="colorSurface">@color/pink_theme_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+    <style name="Theme.ContentfulJavasilver.Teal" parent="Theme.ContentfulJavasilver">
+        <item name="colorPrimary">@color/teal_theme_primary</item>
+        <item name="colorSurface">@color/teal_theme_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/md_theme_light_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/md_theme_light_surfaceContainerHighest</item>
+    </style>
+
+    <!-- 設定画面用のテーマオーバーレイ -->
+    <style name="ThemeOverlay.App.Preference" parent="PreferenceThemeOverlay">
+        <!-- Preference Title -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- Preference Summary (不透明な白リソースを使用) -->
+        <item name="android:textColorSecondary">@color/preference_secondary_text_opaque</item>
+        <!-- Preference Category Title -->
+        <item name="preferenceCategoryTitleTextColor">@android:color/white</item>
+        <!-- General text color fallback -->
+        <item name="android:textColor">@android:color/white</item>
+        <!-- Dialog list item text color -->
+        <item name="android:textColorAlertDialogListItem">@android:color/white</item>
+        <!-- Icon color -->
+        <item name="android:iconTint" tools:targetApi="o">@android:color/white</item>
+        <item name="iconTint">@android:color/white</item> <!-- AppCompat version for iconTint -->
+        <!-- Widget accent color (e.g., Switch thumb on) -->
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
+
+    <!-- **** Custom Widget Styles **** -->
+    <style name="Widget.App.Button.QuizChoice" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">wrap_content</item> <!-- 高さを可変に -->
+        <item name="android:minHeight">56dp</item> <!-- 最低高さを確保 -->
+        <item name="android:paddingTop">16dp</item> <!-- 上パディング -->
+        <item name="android:paddingBottom">16dp</item> <!-- 下パディング -->
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+        <item name="android:textColor">@color/quiz_choice_text_color_selector</item> <!-- Selectorを使用 -->
+        <item name="backgroundTint">@color/quiz_choice_background_selector</item> <!-- Selectorを使用 -->
+        <item name="cornerRadius">12dp</item>
+        <item name="android:gravity">start|center_vertical</item> <!-- テキストを左寄せ -->
+        <item name="android:textAllCaps">false</item>
+        <!-- <item name="android:elevation">4dp</item> --> <!-- 影を削除 -->
+    </style>
+
+    <style name="Widget.App.CheckBox.QuizChoice" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="android:layout_height">wrap_content</item> <!-- 高さを可変に -->
+        <item name="android:minHeight">56dp</item> <!-- 最低高さを確保 -->
+        <item name="android:paddingTop">16dp</item> <!-- 上パディング -->
+        <item name="android:paddingBottom">16dp</item> <!-- 下パディング -->
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+        <item name="android:textColor">@color/quiz_choice_text_color_selector</item> <!-- Selectorを使用 -->
+        <item name="buttonTint">@color/quiz_choice_checkbox_tint_selector</item> <!-- Selectorを使用 -->
+        <!-- 背景は android:background ではなく backgroundTint で制御するため不要 or Button と合わせる -->
+        <item name="android:background">@color/quiz_choice_background_selector</item> <!-- 背景Selectorを設定 -->
+        <item name="cornerRadius">12dp</item> <!-- 角丸を追加 -->
+        <!-- <item name="android:elevation">4dp</item> --> <!-- 影を削除 -->
+        <!-- 背景はSelectorで制御するなら不要かも -->
+        <!-- <item name="android:background">@drawable/quiz_choice_checkbox_background_selector</item> -->
+    </style>
+
+</resources>

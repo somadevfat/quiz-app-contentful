@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JavaSilver</string>
+    <string name="question_label">問題文</string>
+    <string name="count_label">Q%d</string>
+    <string name="btn_answer">選択肢</string>
+    <string name="code_block">&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;\n    android:layout_width=&quot;match_parent&quot;\n    android:layout_height=&quot;match_parent&quot;\n    android:orientation=&quot;vertical&quot;&gt;\n\n    &lt;TextView\n        android:layout_width=&quot;wrap_content&quot;\n        android:layout_height=&quot;wrap_content&quot;\n        android:text=&quot;Hello World!&quot; /&gt;\n\n&lt;/LinearLayout&gt;</string>
+    <string name="logo_description">JCVロゴ</string>
+
+    <!-- Loading Status -->
+    <string name="loading_status_checking">データを確認中...</string>
+    <string name="loading_status_downloading">最新データをダウンロード中...</string>
+    <string name="loading_status_saving">データベースに保存中...</string>
+    <string name="loading_status_loading">データを読み込み中...</string>
+    <string name="loading_status_complete">完了！</string>
+    <string name="loading_status_error_download">エラー: データのダウンロードに失敗しました</string>
+    <string name="loading_status_error_saving">エラー: データベースへの保存に失敗しました</string>
+    <string name="loading_status_error_no_data">エラー: 保存するデータがありません</string>
+
+    <!-- Start Screen -->
+    <string name="start_prompt">画面をタップして開始</string>
+    <string name="login">ログイン / 新規登録</string>
+    <string name="use_without_login">ログインせずに利用する</string>
+
+    <!-- Bottom Navigation -->
+    <string name="title_history">学習履歴</string>
+    <string name="title_bookmark">ブックマーク</string> <!-- Add bookmark title -->
+
+    <!-- Common Buttons -->
+    <string name="back_button_description">戻る</string>
+
+    <!-- Settings Screen (PreferenceFragmentCompat) -->
+    <string name="title_settings">設定</string>
+    <!-- Preference Categories -->
+    <string name="pref_category_appearance">外観</string>
+    <string name="pref_category_general">全般</string>
+    <!-- Theme Preference -->
+    <string name="pref_title_theme">テーマ</string>
+    <string name="theme_entry_default">デフォルト (青)</string>
+    <string name="theme_entry_green">グリーン</string>
+    <string name="theme_entry_orange">オレンジ</string>
+    <string name="theme_entry_purple">パープル</string>
+    <string name="theme_entry_teal">ティール</string>
+    <string name="theme_entry_pink">ピンク</string>
+    <string name="theme_entry_indigo">インディゴ</string>
+    <string name="theme_entry_cyan">シアン</string>
+    <string name="theme_entry_red">レッド</string>
+    <string name="theme_entry_yellow">イエロー</string>
+    <string name="theme_ocean_blue">Ocean Blue</string>
+    <string name="theme_mint_green">Mint Green</string>
+    <string name="theme_terracotta">Terracotta</string>
+    <string name="theme_forest_green">Forest Green</string>
+    <string name="theme_indigo">Indigo</string>
+    <string name="theme_slate">Slate</string>
+    <string name="theme_default">Default (Deep Purple)</string>
+    <!-- Notification Preference -->
+    <string name="pref_title_notification">学習リマインダー通知</string>
+    <string name="pref_summary_notification_on">オン</string>
+    <string name="pref_summary_notification_off">オフ</string>
+    <!-- Privacy Policy Preference -->
+    <string name="pref_title_privacy_policy">プライバシーポリシー</string>
+    <string name="pref_summary_privacy_policy">プライバシーポリシーを表示</string>
+    <!-- Version Preference -->
+    <string name="pref_title_version">アプリバージョン</string>
+    <string name="version_format">%s</string> <!-- Keep only placeholder -->
+
+    <!-- Old Settings Strings (Remove or keep for reference, but not used by PreferenceFragment) -->
+    <!-- <string name="notification_settings">通知設定</string> -->
+    <!-- <string name="learning_reminder">学習リマインダー</string> -->
+    <!-- <string name="app_info">アプリ情報</string> -->
+    <!-- <string name="privacy_policy">プライバシーポリシー</string> -->
+
+    <!-- Privacy Policy Screen -->
+    <string name="privacy_policy_title">プライバシーポリシー</string>
+    <string name="privacy_policy_content">
+        <![CDATA[
+        制定日：YYYY年MM月DD日\n\n
+        [アプリ名]（以下、「本アプリ」といいます。）は、ユーザーの個人情報保護の重要性について認識し、個人情報の保護に関する法律（以下、「個人情報保護法」といいます。）を遵守すると共に、以下のプライバシーポリシー（以下、「本プライバシーポリシー」といいます。）に従い、適切な取扱い及び保護に努めます。\n\n
+        1. 個人情報の定義\n
+        本プライバシーポリシーにおいて、個人情報とは、個人情報保護法第2条第1項により定義された個人情報、すなわち、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日その他の記述等により特定の個人を識別することができるもの（他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものを含みます。）、もしくは個人識別符号が含まれる情報を意味するものとします。\n\n
+        2. 個人情報の収集\n
+        本アプリは、個人情報を収集しません。\n\n
+        3. 個人情報の利用目的\n
+        本アプリは個人情報を収集しないため、利用することもありません。\n\n
+        4. 個人情報利用目的の変更\n
+        本プライバシーポリシーは、法令の変更、事業運営上の必要性、その他の理由により、変更されることがあります。変更後のプライバシーポリシーは、本アプリ内での掲示その他の適切な方法により周知し、変更後のプライバシーポリシーが掲示された時点で効力を生じるものとします。\n\n
+        5. お問い合わせ\n
+        開示等のお申出、ご意見、ご質問、苦情のお申出その他個人情報の取扱いに関するお問い合わせは、下記の窓口までお願いいたします。\n
+        [連絡先情報を記載 e.g., Email: support@example.com]\n\n
+        以上
+        ]]>
+    </string>
+
+    <string name="explanation_dialog_title">解説</string>
+    <string name="ok">OK</string>
+    <string name="question_qid_format">問題 %s</string>
+
+    <!-- Preference Titles -->
+    <string name="sync_header">Sync</string>
+
+    <!-- For Settings Theme Preference -->
+    <string name="pref_theme_title">App Theme</string>
+    <string name="pref_theme_summary">Choose the visual theme for the app</string>
+
+    <string name="character_image_desc">キャラクターイメージ</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_exam">ExamActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Home Fragment</string>
+    <string name="gallery_fragment_label">Gallery Fragment</string>
+    <string name="slideshow_fragment_label">Slideshow Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="exam_category">分野別</string>
+    <string name="exam_list">一覧</string>
+    <string name="exam_random">ランダム出題</string>
+    <string name="home">Home</string>
+    <string name="learn">Learn</string>
+    <string name="problem_list_title">Problem List</string>
+    <string name="confirm">確認</string>
+    <string name="cancel">キャンセル</string>
+    <string name="search_hint">問題を検索…</string>
+    <string name="free_lessons_left">2 Free lessons left</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="java_learning_path">Java Silver学習パス</string>
+    <string name="nuvesco_learning_path">Java Silver学習プログラム</string>
+    <string name="unit_format">Unit %d</string>
+    <string name="lessons_progress_format">%1$d/%2$d Lessons</string>
+    <string name="lesson_icon_description">レッスンアイコン</string>
+    <string name="lesson_completed_description">完了済みマーク</string>
+    <string name="lesson_number_format">Lesson %d</string>
+    <string name="syntax">構文</string>
+    <string name="concept">概念</string>
+    <string name="practice">練習</string>
+    <string name="lesson_1_title">Javaの概要と簡単なJavaプログラムの作成</string>
+    <string name="lesson_2_title">Javaの基本データ型と文字列の操作</string>
+    <string name="lesson_3_title">演算子と制御構造</string>
+    <string name="lesson_4_title">クラスの定義とインスタンスの使用</string>
+    <string name="lesson_5_title">継承とインタフェースの使用</string>
+    <string name="lesson_6_title">例外処理</string>
+    <string name="lesson_1_desc">Javaの基本的な概念とプログラム構造</string>
+    <string name="lesson_2_desc">データ型、変数、文字列の扱い方</string>
+    <string name="lesson_3_desc">制御フローと演算子</string>
+    <string name="lesson_4_desc">オブジェクト指向プログラミングの基礎</string>
+    <string name="lesson_5_desc">クラス設計の応用と多態性</string>
+    <string name="lesson_6_desc">例外のスロー、キャッチと適切な処理</string>
+    <string name="unit_number_format">Unit %d</string>
+
+    <!-- Empty State Messages -->
+    <string name="empty_state_learning_log">まだ学習ログはありません。\n学習を始めましょう！</string>
+    <string name="empty_state_statistics">まだ統計データがありません。\n学習を進めてデータを集めましょう！</string>
+
+    <string name="chapter_format">第%d章</string>
+    <string name="categories_progress_format">%1$d/%2$d Categories</string>
+    <string name="java_chapters_title">Java 学習コース</string>
+    <string name="java_chapters_description">基礎から応用まで、各章を順に進めましょう</string>
+    <string name="chapter_icon_description">Chapter icon</string>
+    <string name="questions_progress_format">%1$d/%2$d Questions</string>
+    <string name="category_icon_description">Category icon</string>
+    <string name="question_count_format">%d問</string>
+    <string name="question_item_number_format">問題 %s</string>
+
+    <string name="default_web_client_id" translatable="false">21822521233-rn9fikgni7bv5kr4k8vosoegkq4qp16e.apps.googleusercontent.com</string>
+
+    <!-- Banner String -->
+    <string name="free_lessons_left_template">残り%dレッスンの無料体験</string>
+
+    <!-- Problem Status Badges -->
+    <string name="status_new">新規</string>
+    <string name="status_completed">完了</string>
+
+    <string name="chapter_icon_desc">Chapter Icon</string>
+    <string name="category_icon_desc">Category Icon</string>
+    <string name="problem_icon_description">問題アイコン</string>
+
+    <!-- Banner Strings -->
+    <string name="today_learning_time_template">今日の学習時間: %s</string>
+
+</resources>

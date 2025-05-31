@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ダークモード用 -->
+    <color name="md_theme_dark_primary">#90CAF9</color>
+    <color name="md_theme_dark_onPrimary">#003A8C</color>
+    <color name="md_theme_dark_primaryContainer">#004D40</color>
+    <color name="md_theme_dark_onPrimaryContainer">#B2DFDB</color>
+    <color name="md_theme_dark_secondary">#C5CAE9</color>
+    <color name="md_theme_dark_onSecondary">#1A237E</color>
+    <color name="md_theme_dark_surface">#303030</color>
+    <color name="md_theme_dark_onSurface">#F5F5F5</color>
+</resources> 

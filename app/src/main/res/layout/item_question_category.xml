@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp" 
+    android:paddingTop="16dp" 
+    android:paddingBottom="16dp" 
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <!-- アイコンコンテナに変更 -->
+    <FrameLayout
+        android:id="@+id/categoryIconContainer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/divider">
+        
+        <ImageView
+            android:id="@+id/categoryIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:contentDescription="Category icon"
+            android:src="@drawable/outline_assignment_24" />
+            
+        <!-- アイコンの右下にチェックマーク配置 -->
+        <ImageView
+            android:id="@+id/completionCheckmark"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_lesson_complete"
+            android:visibility="gone"
+            android:contentDescription="Completion status"
+            tools:visibility="visible"/>
+    </FrameLayout>
+
+    <!-- 情報エリア - 制約を更新 -->
+    <LinearLayout
+        android:id="@+id/categoryInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/categoryIconContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/categoryIconContainer"
+        app:layout_constraintBottom_toBottomOf="@id/categoryIconContainer">
+
+        <!-- 問題番号表示 (qidを使用) -->
+        <TextView
+            android:id="@+id/itemNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="2dp"
+            tools:text="問題 java_basic_001" />
+
+        <!-- 問題カテゴリタイトル -->
+        <TextView
+            android:id="@+id/questionCategoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="基本操作" />
+
+        <!-- 問題カテゴリ説明 (コメントアウト) -->
+        <!-- 
+        <TextView
+            android:id="@+id/questionCategoryDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#BBBBBB"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            tools:text="配列の基本的な操作と使い方" />
+         -->
+    </LinearLayout>
+
+    <!-- 区切り線 - 制約を更新 -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.2"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/categoryIconContainer" 
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/categoryInfo" 
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout> 
