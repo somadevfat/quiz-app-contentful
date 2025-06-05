@@ -63,3 +63,6 @@ local.properties
 # Google Services
 app/google-services.json
 google-services.json
+
+android-ci-sa-key.json
+sa_key_b64.txt
