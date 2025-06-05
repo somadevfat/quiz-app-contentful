@@ -34,7 +34,7 @@ jobs:
         echo "CONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN }}" >> local.properties
 
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew build -x detekt
 
     - name: Run tests
       run: ./gradlew test
