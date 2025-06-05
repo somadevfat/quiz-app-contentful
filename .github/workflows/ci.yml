@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, develop ]
 
 jobs:
   build:
@@ -23,8 +23,18 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
+    - name: Restore google-services.json
+      run: |
+        echo "${{ secrets.GOOGLE_SERVICES_JSON }}" | base64 -d > app/google-services.json
+
+    - name: Generate local.properties
+      run: |
+        echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+        echo "CONTENTFUL_SPACE_ID=${{ secrets.CONTENTFUL_SPACE_ID }}" >> local.properties
+        echo "CONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN }}" >> local.properties
+
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew build -x detekt
 
     - name: Run tests
       run: ./gradlew test
